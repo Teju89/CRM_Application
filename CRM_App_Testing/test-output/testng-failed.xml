@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.crm.test.organization.CRM_Organization_Test">
+        <methods>
+          <include name="configBeforeClass"/>
+          <include name="configBeforeMethod"/>
+          <include name="createOrganizationWithName"/>
+          <include name="configAfterClass"/>
+          <include name="configAfterMethod"/>
+          <include name="configBeforeSuite"/>
+          <include name="configAfterSuite"/>
+        </methods>
+      </class> <!-- com.crm.test.organization.CRM_Organization_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
