@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-27T18:23:05 IST" name="Suite" finished-at="2025-02-27T18:23:53 IST" duration-ms="47858">
+    <groups>
+    </groups>
+    <test started-at="2025-02-27T18:23:05 IST" name="TestRunner_chrome" finished-at="2025-02-27T18:23:51 IST" duration-ms="46234">
+      <class name="com.crm.test.contact.Create_Contact_Test">
+        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:05 IST" name="configBeforeClass" finished-at="2025-02-27T18:23:08 IST" duration-ms="2962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:11 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:15 IST" duration-ms="4277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method signature="createContactWithMandatoryFields(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:15 IST" name="createContactWithMandatoryFields" data-provider="testData" finished-at="2025-02-27T18:23:29 IST" duration-ms="13692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithMandatoryFields -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:29 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:31 IST" duration-ms="2100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:31 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:35 IST" duration-ms="3867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method signature="createContactWithStartAndEndDate(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:35 IST" name="createContactWithStartAndEndDate" data-provider="testData" finished-at="2025-02-27T18:23:49 IST" duration-ms="13195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithStartAndEndDate -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:49 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:51 IST" duration-ms="2086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:51 IST" name="configAfterClass" finished-at="2025-02-27T18:23:51 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+      </class> <!-- com.crm.test.contact.Create_Contact_Test -->
+    </test> <!-- TestRunner_chrome -->
+    <test started-at="2025-02-27T18:23:05 IST" name="TestRunner_firefox" finished-at="2025-02-27T18:23:53 IST" duration-ms="47858">
+      <class name="com.crm.test.contact.Create_Contact_Test">
+        <test-method is-config="true" signature="configBeforeSuite()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:05 IST" name="configBeforeSuite" finished-at="2025-02-27T18:23:05 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeSuite -->
+        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:05 IST" name="configBeforeClass" finished-at="2025-02-27T18:23:11 IST" duration-ms="5827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:11 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:16 IST" duration-ms="4557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method signature="createContactWithMandatoryFields(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:16 IST" name="createContactWithMandatoryFields" data-provider="testData" finished-at="2025-02-27T18:23:29 IST" duration-ms="12768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithMandatoryFields -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:29 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:31 IST" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:32 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:36 IST" duration-ms="3948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method signature="createContactWithStartAndEndDate(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:36 IST" name="createContactWithStartAndEndDate" data-provider="testData" finished-at="2025-02-27T18:23:49 IST" duration-ms="13432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithStartAndEndDate -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:49 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:51 IST" duration-ms="2220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:51 IST" name="configAfterClass" finished-at="2025-02-27T18:23:53 IST" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+        <test-method is-config="true" signature="configAfterSuite()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:53 IST" name="configAfterSuite" finished-at="2025-02-27T18:23:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterSuite -->
+      </class> <!-- com.crm.test.contact.Create_Contact_Test -->
+    </test> <!-- TestRunner_firefox -->
+  </suite> <!-- Suite -->
+</testng-results>
