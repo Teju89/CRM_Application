@@ -1,89 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-27T18:23:05 IST" name="Suite" finished-at="2025-02-27T18:23:53 IST" duration-ms="47858">
+  <suite started-at="2025-03-10T09:54:15 IST" name="Suite" finished-at="2025-03-10T09:54:16 IST" duration-ms="1544">
     <groups>
+      <group name="smokeTesting">
+        <method signature="Create_Contact_Test.createContactWithMandatoryFields(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" name="createContactWithMandatoryFields" class="com.crm.test.contact.Create_Contact_Test"/>
+        <method signature="Create_Organization_Test.createOrganizationWithName(com.crm.generic.entity.Organization)[pri:0, instance:com.crm.test.organization.Create_Organization_Test@77f80c04]" name="createOrganizationWithName" class="com.crm.test.organization.Create_Organization_Test"/>
+      </group> <!-- smokeTesting -->
     </groups>
-    <test started-at="2025-02-27T18:23:05 IST" name="TestRunner_chrome" finished-at="2025-02-27T18:23:51 IST" duration-ms="46234">
+    <test started-at="2025-03-10T09:54:15 IST" name="Test" finished-at="2025-03-10T09:54:16 IST" duration-ms="1544">
       <class name="com.crm.test.contact.Create_Contact_Test">
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:05 IST" name="configBeforeClass" finished-at="2025-02-27T18:23:08 IST" duration-ms="2962" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:11 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:15 IST" duration-ms="4277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeMethod -->
-        <test-method signature="createContactWithMandatoryFields(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:15 IST" name="createContactWithMandatoryFields" data-provider="testData" finished-at="2025-02-27T18:23:29 IST" duration-ms="13692" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithMandatoryFields -->
-        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:29 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:31 IST" duration-ms="2100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterMethod -->
-        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:31 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:35 IST" duration-ms="3867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeMethod -->
-        <test-method signature="createContactWithStartAndEndDate(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:35 IST" name="createContactWithStartAndEndDate" data-provider="testData" finished-at="2025-02-27T18:23:49 IST" duration-ms="13195" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithStartAndEndDate -->
-        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:49 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:51 IST" duration-ms="2086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterMethod -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@445b295b]" started-at="2025-02-27T18:23:51 IST" name="configAfterClass" finished-at="2025-02-27T18:23:51 IST" duration-ms="353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterClass -->
-      </class> <!-- com.crm.test.contact.Create_Contact_Test -->
-    </test> <!-- TestRunner_chrome -->
-    <test started-at="2025-02-27T18:23:05 IST" name="TestRunner_firefox" finished-at="2025-02-27T18:23:53 IST" duration-ms="47858">
-      <class name="com.crm.test.contact.Create_Contact_Test">
-        <test-method is-config="true" signature="configBeforeSuite()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:05 IST" name="configBeforeSuite" finished-at="2025-02-27T18:23:05 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="configBeforeSuite()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:15 IST" name="configBeforeSuite" finished-at="2025-03-10T09:54:15 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeforeSuite -->
-        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:05 IST" name="configBeforeClass" finished-at="2025-02-27T18:23:11 IST" duration-ms="5827" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="configBeforeClass()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:15 IST" name="configBeforeClass" finished-at="2025-03-10T09:54:15 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.hashCode()" because "browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "browser" is null
+at com.crm.generic.baseclass.BaseConfigClass.configBeforeClass(BaseConfigClass.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeforeClass -->
-        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:11 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:16 IST" duration-ms="4557" status="PASS">
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:16 IST" name="configBeforeMethod" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeforeMethod -->
-        <test-method signature="createContactWithMandatoryFields(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:16 IST" name="createContactWithMandatoryFields" data-provider="testData" finished-at="2025-02-27T18:23:29 IST" duration-ms="12768" status="PASS">
+        <test-method signature="createContactWithMandatoryFields(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:16 IST" name="createContactWithMandatoryFields" data-provider="testData" finished-at="2025-03-10T09:54:16 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -91,41 +65,153 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.hashCode()" because "browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "browser" is null
+at com.crm.generic.baseclass.BaseConfigClass.configBeforeClass(BaseConfigClass.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createContactWithMandatoryFields -->
-        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:29 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:31 IST" duration-ms="2333" status="PASS">
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:16 IST" name="configAfterMethod" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterMethod -->
-        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:32 IST" name="configBeforeMethod" finished-at="2025-02-27T18:23:36 IST" duration-ms="3948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeMethod -->
-        <test-method signature="createContactWithStartAndEndDate(com.crm.generic.entity.Contact)[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:36 IST" name="createContactWithStartAndEndDate" data-provider="testData" finished-at="2025-02-27T18:23:49 IST" duration-ms="13432" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Contact(firstName=Tejal, lastName=Borase, mobile=1234567898, orgName=Facebook)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithStartAndEndDate -->
-        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:49 IST" name="configAfterMethod" finished-at="2025-02-27T18:23:51 IST" duration-ms="2220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterMethod -->
-        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:51 IST" name="configAfterClass" finished-at="2025-02-27T18:23:53 IST" duration-ms="1449" status="PASS">
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:16 IST" name="configAfterClass" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterClass -->
-        <test-method is-config="true" signature="configAfterSuite()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ba54932]" started-at="2025-02-27T18:23:53 IST" name="configAfterSuite" finished-at="2025-02-27T18:23:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configAfterSuite()[pri:0, instance:com.crm.test.contact.Create_Contact_Test@ed7f8b4]" started-at="2025-03-10T09:54:17 IST" name="configAfterSuite" finished-at="2025-03-10T09:54:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterSuite -->
       </class> <!-- com.crm.test.contact.Create_Contact_Test -->
-    </test> <!-- TestRunner_firefox -->
+      <class name="com.crm.test.organization.Create_Organization_Test">
+        <test-method is-config="true" signature="configBeforeClass()[pri:0, instance:com.crm.test.organization.Create_Organization_Test@77f80c04]" started-at="2025-03-10T09:54:16 IST" name="configBeforeClass" finished-at="2025-03-10T09:54:16 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.hashCode()" because "browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "browser" is null
+at com.crm.generic.baseclass.BaseConfigClass.configBeforeClass(BaseConfigClass.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.crm.test.organization.Create_Organization_Test@77f80c04]" started-at="2025-03-10T09:54:16 IST" name="configBeforeMethod" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method signature="createOrganizationWithName(com.crm.generic.entity.Organization)[pri:0, instance:com.crm.test.organization.Create_Organization_Test@77f80c04]" started-at="2025-03-10T09:54:16 IST" name="createOrganizationWithName" data-provider="testData" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Organization(orgName=Facebook_, industry=Biotechnology, type=Analyst)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.hashCode()" because "browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "browser" is null
+at com.crm.generic.baseclass.BaseConfigClass.configBeforeClass(BaseConfigClass.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithName -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.crm.test.organization.Create_Organization_Test@77f80c04]" started-at="2025-03-10T09:54:16 IST" name="configAfterMethod" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:com.crm.test.organization.Create_Organization_Test@77f80c04]" started-at="2025-03-10T09:54:16 IST" name="configAfterClass" finished-at="2025-03-10T09:54:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+      </class> <!-- com.crm.test.organization.Create_Organization_Test -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
