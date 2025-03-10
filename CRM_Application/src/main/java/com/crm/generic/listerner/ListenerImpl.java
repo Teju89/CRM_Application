@@ -32,7 +32,7 @@ public class ListenerImpl extends BaseConfigClass implements ITestListener, ISui
 			spark.config().setTheme(Theme.DARK);
 			report = new ExtentReports();
 			report.attachReporter(spark);
-			report.setSystemInfo("browser",  propertyFileUtility.getDataFromPropertyFile("browser"));
+			report.setSystemInfo("browser",  System.getProperty("browser"));
 			report.setSystemInfo("Windows", System.getProperty("os.name"));
 		} catch (Exception e) {
 		}

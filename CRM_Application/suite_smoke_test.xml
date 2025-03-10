@@ -6,7 +6,8 @@
   		<include name="smokeTesting"></include>
   	</run>
   </groups>
-  <test thread-count="5" name="Test">
+  <test name="Test">
+  	<!--  <parameter name="browser" value="chrome"></parameter> -->
     <classes>
       <class name="com.crm.test.contact.Create_Contact_Test"/>
       <class name="com.crm.test.organization.Create_Organization_Test"/>

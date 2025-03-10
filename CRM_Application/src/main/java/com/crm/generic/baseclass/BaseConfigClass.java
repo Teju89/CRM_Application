@@ -30,19 +30,20 @@ public class BaseConfigClass {
 	public JavaUtility javaUtility = new JavaUtility();
 	public ExcelFileUtility excel = new ExcelFileUtility();
 
-	@BeforeSuite()
+	@BeforeSuite(groups = { "smokeTesting" })
 	public void configBeforeSuite() {
 		System.out.println("BS");
 //		databaseUtility.getConnection();
 	}
 
-	@BeforeClass()
-	@Parameters("browser")
-	public void configBeforeClass(String browser) throws Throwable {
+	@BeforeClass(groups = { "smokeTesting" })
+//	@Parameters("browser")
+//	public void configBeforeClass(String browser) throws Throwable { - parameter
+	public void configBeforeClass() throws Throwable {
 		System.out.println("BC");
-//		String browser;
+		String browser = System.getProperty("browser"); // mvn cmd
 
-//		browser = propertyFileUtility.getDataFromPropertyFile("browser");
+//		browser = propertyFileUtility.getDataFromPropertyFile("browser"); - properties file
 		System.out.println(browser);
 		switch (browser) {
 		case "chrome":
@@ -54,7 +55,7 @@ public class BaseConfigClass {
 			driver = new FirefoxDriver();
 			System.out.println("firefox browser launched");
 			break;
-			
+
 		case "edge":
 			driver = new EdgeDriver();
 			System.out.println("Edge browser launched");
@@ -63,37 +64,42 @@ public class BaseConfigClass {
 		default:
 			break;
 		}
-		driver.get(propertyFileUtility.getDataFromPropertyFile("url"));
+		driver.get(System.getProperty("url"));
+//		driver.get(propertyFileUtility.getDataFromPropertyFile("url"));
 		driver.manage().window().maximize();
+//		webDriverUtitlity.waitForPagetoLoad(driver,
+//				Integer.parseInt(propertyFileUtility.getDataFromPropertyFile("timeout")));
+
 		webDriverUtitlity.waitForPagetoLoad(driver,
-				Integer.parseInt(propertyFileUtility.getDataFromPropertyFile("timeout")));
+				Integer.parseInt(System.getProperty("timeout")));
 
 		UtilityClassObject.setDriver(driver);
 		System.out.println("BC Completed");
 	}
 
-	@BeforeMethod()
+	@BeforeMethod(groups = { "smokeTesting" })
 	public void configBeforeMethod() throws Exception {
 		System.out.println("BM");
 		LoginPage loginPage = new LoginPage();
-		loginPage.performLoginOperation(propertyFileUtility.getDataFromPropertyFile("username"),
-				propertyFileUtility.getDataFromPropertyFile("password"));
+//		loginPage.performLoginOperation(propertyFileUtility.getDataFromPropertyFile("username"),
+//				propertyFileUtility.getDataFromPropertyFile("password"));
+		loginPage.performLoginOperation(System.getProperty("username"), System.getProperty("password"));
 	}
 
-	@AfterMethod()
+	@AfterMethod(groups = { "smokeTesting" })
 	public void configAfterMethod() {
 		HomePage homePage = new HomePage();
 		homePage.logout();
-		UtilityClassObject.getTest().log(Status.INFO,"after method");
+		UtilityClassObject.getTest().log(Status.INFO, "after method");
 	}
 
-	@AfterClass()
+	@AfterClass(groups = { "smokeTesting" })
 	public void configAfterClass() {
 		driver.quit();
-		UtilityClassObject.getTest().log(Status.INFO,"after class");
+		UtilityClassObject.getTest().log(Status.INFO, "after class");
 	}
 
-	@AfterSuite()
+	@AfterSuite(groups = { "smokeTesting" })
 	public void configAfterSuite() {
 //		databaseUtility.closeConnection();
 	}
